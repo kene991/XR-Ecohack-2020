@@ -43,7 +43,11 @@ public class OptionDescription : MonoBehaviour
         buttonTwo.GetComponentInChildren<TextMeshProUGUI>().SetText(buttonTwoDescription);
         gameObject.GetComponent<Collider>().enabled = false;
 
+       // Destroy(gameObject);
+
+
     }
+/*
     public void OnClick()
     {
         option.SetActive(true);
@@ -54,6 +58,8 @@ public class OptionDescription : MonoBehaviour
         buttonTwo.GetComponentInChildren<TextMeshProUGUI>().SetText(buttonTwoDescription);
 
     }
+  
+    */
     public void optionOne()
     {
         if (firstSelection == true)
@@ -70,13 +76,12 @@ public class OptionDescription : MonoBehaviour
         }
         //Debug.Log("1");
         option.SetActive(false);
+        Destroy(gameObject);
     }
     public void optionTwo()
     {
         if (secondSelection == true)
         {
-           
-        
             Debug.Log("Good Choice");
             //Good Script
         }
@@ -85,6 +90,7 @@ public class OptionDescription : MonoBehaviour
             Debug.Log("Bad Choice");
         }
         //Debug.Log("2");
-        option.SetActive(false);
+        option.SetActive(false); 
+        Destroy(gameObject);
     }
 }
