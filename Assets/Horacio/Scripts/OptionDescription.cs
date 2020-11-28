@@ -26,6 +26,17 @@ public class OptionDescription : MonoBehaviour
        
         
     }
+    private void OnMouseDown()
+    {
+        selected = true;
+        option.SetActive(true);
+        TextHolder.textDescription = description;
+        buttonOne.onClick.AddListener(optionOne);
+        buttonTwo.onClick.AddListener(optionTwo);
+        buttonOne.GetComponentInChildren<TextMeshProUGUI>().SetText(buttonOneDescription);
+        buttonTwo.GetComponentInChildren<TextMeshProUGUI>().SetText(buttonTwoDescription);
+
+    }
     public void OnClick()
     {
         selected = true;
