@@ -16,9 +16,10 @@ public class OptionDescription : MonoBehaviour
     public bool secondSelection = false;
     bool good = false;
 
+
     private void OnMouseDown()
     {
-        
+        ScoreManager.pinCount++;
         option.SetActive(true);
         TextHolder.textDescription = description;
         buttonOne.onClick.AddListener(optionOne);
@@ -35,11 +36,15 @@ public class OptionDescription : MonoBehaviour
             option2.SetActive(true);
             Debug.Log("option1ifstatement");
             //Good Script
+            ScoreManager.goodCount++;
+            Debug.Log("Good " + ScoreManager.goodCount);
         }
         else
         {
             
             Debug.Log("option1elsestatement");
+            ScoreManager.badCount++;
+            Debug.Log("bad " + ScoreManager.badCount);
         }
         //Debug.Log("1");
         option.SetActive(false);
@@ -52,12 +57,14 @@ public class OptionDescription : MonoBehaviour
         {
             
             Debug.Log("Good Choice");
+            Debug.Log("Good " + ScoreManager.goodCount);
             //Good Script
         }
         else
         {
             option3.SetActive(true);
             Debug.Log("Bad Choice");
+            Debug.Log("bad " + ScoreManager.badCount);
         }
         //Debug.Log("2");
         option.SetActive(false); 
