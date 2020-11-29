@@ -41,6 +41,7 @@ public class OptionDescription : MonoBehaviour
             //Good Script
             ScoreManager.goodCount++;
             Debug.Log("Good " + ScoreManager.goodCount);
+            goodClip.Play();
         }
         else
         {
@@ -48,6 +49,7 @@ public class OptionDescription : MonoBehaviour
             Debug.Log("option1elsestatement");
             ScoreManager.badCount++;
             Debug.Log("bad " + ScoreManager.badCount);
+            badClip.Play();
         }
         //Debug.Log("1");
         option.SetActive(false);
@@ -62,15 +64,18 @@ public class OptionDescription : MonoBehaviour
             Debug.Log("Good Choice");
             Debug.Log("Good " + ScoreManager.goodCount);
             //Good Script
+            goodClip.Play();
         }
         else
         {
             option3.SetActive(true);
             Debug.Log("Bad Choice");
             Debug.Log("bad " + ScoreManager.badCount);
+            badClip.Play();
         }
         //Debug.Log("2");
         option.SetActive(false); 
         Destroy(gameObject);
+
     }
 }
