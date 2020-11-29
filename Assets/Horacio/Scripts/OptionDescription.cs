@@ -8,7 +8,8 @@ public class OptionDescription : MonoBehaviour
     public AudioSource goodClip;
     public AudioSource badClip;
     public string description;
-    
+
+    public List<GameObject> options;
     public GameObject option, option2, option3;
     public Button buttonOne;
     public string buttonOneDescription;
