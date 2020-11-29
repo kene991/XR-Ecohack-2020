@@ -602,7 +602,7 @@ GameObject:
   - component: {fileID: 650970210}
   - component: {fileID: 650970214}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Pin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,7 +859,7 @@ GameObject:
   - component: {fileID: 808809810}
   - component: {fileID: 808809809}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Pin (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1600,7 +1600,7 @@ GameObject:
   - component: {fileID: 1667270417}
   - component: {fileID: 1667270416}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Pin (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
