@@ -10,7 +10,6 @@ public class OptionDescription : MonoBehaviour
     AudioSource audioSource;
     public string description;
 
-    public List<GameObject> options;
     public GameObject option, option2, option3;
     public Button buttonOne;
     public string buttonOneDescription;
@@ -47,8 +46,8 @@ public class OptionDescription : MonoBehaviour
             //Good Script
             ScoreManager.goodCount++;
             Debug.Log("Good " + ScoreManager.goodCount);
-            audioSource.clip = goodClip;
-            audioSource.Play();
+            //audioSource.clip = goodClip;
+            //audioSource.Play();
         }
         else
         {
@@ -56,8 +55,8 @@ public class OptionDescription : MonoBehaviour
             Debug.Log("option1elsestatement");
             ScoreManager.badCount++;
             Debug.Log("bad " + ScoreManager.badCount);
-            audioSource.clip = badClip;
-            audioSource.Play();
+            //audioSource.clip = badClip;
+            //audioSource.Play();
         }
         //Debug.Log("1");
         option.SetActive(false);
@@ -72,16 +71,16 @@ public class OptionDescription : MonoBehaviour
             Debug.Log("Good Choice");
             Debug.Log("Good " + ScoreManager.goodCount);
             //Good Script
-            audioSource.clip = goodClip;
-            audioSource.Play();
+            //audioSource.clip = goodClip;
+            //audioSource.Play();
         }
         else
         {
             option3.SetActive(true);
             Debug.Log("Bad Choice");
             Debug.Log("bad " + ScoreManager.badCount);
-            audioSource.clip = badClip;
-            audioSource.Play();
+            //audioSource.clip = badClip;
+            //audioSource.Play();
         }
         //Debug.Log("2");
         option.SetActive(false); 
