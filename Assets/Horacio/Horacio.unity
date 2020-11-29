@@ -553,6 +553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7647d4cac290f47faaf1b39c16ef695a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodClip: {fileID: 0}
+  badClip: {fileID: 0}
   description: A paragraph is a self-contained unit of discourse in writing dealing
     with a particular point or idea. A paragraph consists of one or more sentences.
     Though not required by the syntax of any language, paragraphs are usually an
@@ -980,6 +982,7 @@ GameObject:
   - component: {fileID: 650970211}
   - component: {fileID: 650970210}
   - component: {fileID: 650970214}
+  - component: {fileID: 650970213}
   m_Layer: 0
   m_Name: Pin
   m_TagString: Untagged
@@ -1061,6 +1064,102 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650970208}
   m_Mesh: {fileID: 4711208715938537054, guid: ef6fdd6e5c23343e1ba69c94e33789a9, type: 3}
+--- !u!82 &650970213
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650970208}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &650970214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1073,6 +1172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7647d4cac290f47faaf1b39c16ef695a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodClip: {fileID: 0}
+  badClip: {fileID: 0}
   description: An oilrig has received damage in the Gulf of Mexico, leaking oil and
     destroying marine life at a rapid pace. If it is not handled correctly, the ecosystem
     will become uninhabitable and an enormous amount of marine animals will perish.
@@ -1501,7 +1602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &808809808
 Transform:
   m_ObjectHideFlags: 0
@@ -1528,6 +1629,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7647d4cac290f47faaf1b39c16ef695a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodClip: {fileID: 0}
+  badClip: {fileID: 0}
   description: Options
   option: {fileID: 1264806667}
   option2: {fileID: 0}
@@ -2677,6 +2780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7647d4cac290f47faaf1b39c16ef695a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodClip: {fileID: 0}
+  badClip: {fileID: 0}
   description: 'A paragraph is a series of related sentences developing a central
     idea, called the topic. Try to think about paragraphs in terms of thematic unity:
     a paragraph is a sentence or a group of sentences that supports one central,
@@ -3167,6 +3272,7 @@ GameObject:
   - component: {fileID: 1667270418}
   - component: {fileID: 1667270417}
   - component: {fileID: 1667270416}
+  - component: {fileID: 1667270420}
   m_Layer: 0
   m_Name: Pin (1)
   m_TagString: Untagged
@@ -3200,6 +3306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7647d4cac290f47faaf1b39c16ef695a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodClip: {fileID: 8300000, guid: a2c8b983794e6d440a6881b37640307c, type: 3}
+  badClip: {fileID: 8300000, guid: b45a82cf6a8bbbb43ab2b9611f01895a, type: 3}
   description: There are reports of a massive plastic waste build up in Lake Erie;
     it is affecting the local beaver population drastically. This is causing rising
     tension between the United States and Canada. What will you do?
@@ -3272,6 +3380,102 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667270414}
   m_Mesh: {fileID: 4711208715938537054, guid: ef6fdd6e5c23343e1ba69c94e33789a9, type: 3}
+--- !u!82 &1667270420
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667270414}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1677259604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3925,6 +4129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7647d4cac290f47faaf1b39c16ef695a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodClip: {fileID: 0}
+  badClip: {fileID: 0}
   description: Hello
   option: {fileID: 1264806667}
   option2: {fileID: 0}
