@@ -17,7 +17,7 @@ public class MoveTextIp : MonoBehaviour
         transform.Translate(0, 2, 0);
         if (transform.localPosition.y >= 2000)
         {
-            transform.localPosition = new Vector3(0, -785, 0);
+            transform.localPosition = new Vector3(0, -1416, 0);
         }
     }
 }

@@ -2294,6 +2294,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 3496778227446358821}
+    - target: {fileID: 6790436661503815007, guid: 633d93b2b9f70f24cb615c26e7977be4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8f2ce6815501a934fbb896d03e1254a8,
+        type: 3}
     - target: {fileID: 6790436661624616044, guid: 633d93b2b9f70f24cb615c26e7977be4,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -2629,6 +2635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: goodEndingScene
       value: GoodEnding
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760701619972801542, guid: 0a2bb2a84e6312e4fbf70c309c0b359e,
+        type: 3}
+      propertyPath: badEndingScene
+      value: Bad Ending
       objectReference: {fileID: 0}
     - target: {fileID: 4760701619972801543, guid: 0a2bb2a84e6312e4fbf70c309c0b359e,
         type: 3}

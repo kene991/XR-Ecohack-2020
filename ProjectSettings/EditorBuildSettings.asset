@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Kene/GoodEnding.unity
     guid: e3f5db312799e4e7dacf6e27aa2263ca
+  - enabled: 1
+    path: Assets/Kene/Bad Ending.unity
+    guid: 8900622d04540d64fa00b06d4f44a901
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 083d943d36ed81c4f95b85944f2f3ff8,
       type: 2}
