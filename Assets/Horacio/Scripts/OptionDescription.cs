@@ -5,9 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 public class OptionDescription : MonoBehaviour
 {
-    public AudioClip goodClip;
-    public AudioClip badClip;
-    AudioSource audioSource;
+    public AudioSource goodClip;
+    public AudioSource badClip;
     public string description;
 
     public GameObject option, option2, option3;
@@ -21,7 +20,6 @@ public class OptionDescription : MonoBehaviour
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnMouseDown()
@@ -41,22 +39,19 @@ public class OptionDescription : MonoBehaviour
     {
         if (firstSelection == true)
         {
+            goodClip.Play();
             option2.SetActive(true);
             Debug.Log("option1ifstatement");
             //Good Script
             ScoreManager.goodCount++;
             Debug.Log("Good " + ScoreManager.goodCount);
-            //audioSource.clip = goodClip;
-            //audioSource.Play();
         }
         else
         {
-            
+            badClip.Play();
             Debug.Log("option1elsestatement");
             ScoreManager.badCount++;
             Debug.Log("bad " + ScoreManager.badCount);
-            //audioSource.clip = badClip;
-            //audioSource.Play();
         }
         //Debug.Log("1");
         option.SetActive(false);
@@ -67,20 +62,17 @@ public class OptionDescription : MonoBehaviour
     {
         if (secondSelection == true)
         {
-            
+            goodClip.Play();
             Debug.Log("Good Choice");
             Debug.Log("Good " + ScoreManager.goodCount);
             //Good Script
-            //audioSource.clip = goodClip;
-            //audioSource.Play();
         }
         else
         {
+            badClip.Play();
             option3.SetActive(true);
             Debug.Log("Bad Choice");
             Debug.Log("bad " + ScoreManager.badCount);
-            //audioSource.clip = badClip;
-            //audioSource.Play();
         }
         //Debug.Log("2");
         option.SetActive(false); 
