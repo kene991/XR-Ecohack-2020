@@ -7,7 +7,7 @@ using TMPro;
 public class ResourceManagement : MonoBehaviour
 {
 
-    public TMP_Text resourcesText;
+    public Text resourcesText;
     public int resourcesAvaliableInt = 1000;
 
     // Update is called once per frame

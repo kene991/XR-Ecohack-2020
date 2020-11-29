@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EarthRotation : MonoBehaviour
 {
-    Text dayText;
+    public Text dayText;
     int dayNum = 0;
     public int seconds = 15;
 
