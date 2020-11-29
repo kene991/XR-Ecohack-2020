@@ -876,9 +876,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Well done! You have cutoff the spill from the source and prevented it
-    from spreading further. By limiting the spread, you contained the affected wildlife
-    population to a limited amount. '
+  m_text: By banning the primary causes of the plastic pollution and cleaning the
+    floating bags and bottles in the lake, you have effectively reduced the pollution
+    by 2/3rds. Both countries have combined efforts to eliminate the remaining waste.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3204,14 +3204,14 @@ MonoBehaviour:
     it is affecting the local beaver population drastically. This is causing rising
     tension between the United States and Canada. What will you do?
   option: {fileID: 1264806667}
-  option2: {fileID: 1536578616}
-  option3: {fileID: 1995123911}
+  option2: {fileID: 1379894776}
+  option3: {fileID: 1826013823}
   buttonOne: {fileID: 515918314}
-  buttonOneDescription: No
-  firstSelection: 0
+  buttonOneDescription: Ban on plastic products
+  firstSelection: 1
   buttonTwo: {fileID: 2042027695}
-  buttonTwoDescription: Yes
-  secondSelection: 1
+  buttonTwoDescription: Dump plastic eating worms into lake
+  secondSelection: 0
 --- !u!65 &1667270417
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4217,9 +4217,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: By prioritizing the wildlife first, you did not contain the spill in time.
-    It has spread astronomically and has become too much for your country to handle
-    alone. If possible, the ecosystem will take decades to recover.
+  m_text: The fish in the lake have eaten all the worms. In leu of the growing plastic
+    pollution, the beavers have gained sentience. They have built a castle of plastic
+    and occupied Lake Erie, declaring independence from both countries.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
