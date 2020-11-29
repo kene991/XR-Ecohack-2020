@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mario/Main Game.unity
     guid: 1566f0e3231384eed812dced083497e7
+  - enabled: 1
+    path: Assets/Kene/GoodEnding.unity
+    guid: e3f5db312799e4e7dacf6e27aa2263ca
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 083d943d36ed81c4f95b85944f2f3ff8,
       type: 2}
