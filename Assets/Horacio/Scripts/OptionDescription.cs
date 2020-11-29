@@ -10,9 +10,15 @@ public class OptionDescription : MonoBehaviour
     public GameObject option;
     public Button buttonOne;
     public string buttonOneDescription;
+    public bool firstSelection =  false;
+    
     public Button buttonTwo;
     public string buttonTwoDescription;
-    bool selected = false;
+    public bool secondSelection = false;
+    bool good = false;
+
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,18 +34,22 @@ public class OptionDescription : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        selected = true;
+        
         option.SetActive(true);
         TextHolder.textDescription = description;
         buttonOne.onClick.AddListener(optionOne);
         buttonTwo.onClick.AddListener(optionTwo);
         buttonOne.GetComponentInChildren<TextMeshProUGUI>().SetText(buttonOneDescription);
         buttonTwo.GetComponentInChildren<TextMeshProUGUI>().SetText(buttonTwoDescription);
+        gameObject.GetComponent<Collider>().enabled = false;
+
+       // Destroy(gameObject);
+
 
     }
+/*
     public void OnClick()
     {
-        selected = true;
         option.SetActive(true);
         TextHolder.textDescription = description;
         buttonOne.onClick.AddListener(optionOne);
@@ -48,16 +58,39 @@ public class OptionDescription : MonoBehaviour
         buttonTwo.GetComponentInChildren<TextMeshProUGUI>().SetText(buttonTwoDescription);
 
     }
+  
+    */
     public void optionOne()
     {
-        Debug.Log("1");
-        selected = false;
+        if (firstSelection == true)
+        {
+          
+        
+        
+            Debug.Log("Good Choice");
+            //Good Script
+        }
+        else
+        {
+            Debug.Log("Bad Choice");
+        }
+        //Debug.Log("1");
         option.SetActive(false);
+        Destroy(gameObject);
     }
     public void optionTwo()
     {
-        Debug.Log("2");
-        selected = false;
-        option.SetActive(false);
+        if (secondSelection == true)
+        {
+            Debug.Log("Good Choice");
+            //Good Script
+        }
+        else
+        {
+            Debug.Log("Bad Choice");
+        }
+        //Debug.Log("2");
+        option.SetActive(false); 
+        Destroy(gameObject);
     }
 }

@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class EarthRotation : MonoBehaviour
 {
-    public Text dayText;
+    Text dayText;
     int dayNum = 0;
     public int seconds = 15;
 
     void Start()
     {
-        
+        dayText = FindObjectOfType<Text>();
     }
 
     void FixedUpdate()
@@ -24,7 +24,6 @@ public class EarthRotation : MonoBehaviour
     IEnumerator Count()
     {
         yield return new WaitForSeconds(14);
-        gameObject.transform.Rotate(0, 0, 0);
         dayCount();
         StopAllCoroutines();
     }
@@ -32,6 +31,5 @@ public class EarthRotation : MonoBehaviour
     void dayCount()
     {
         dayText.text = "Day: " + dayNum++;
-        gameObject.transform.Rotate(0, 0, 0);
     }
 }
