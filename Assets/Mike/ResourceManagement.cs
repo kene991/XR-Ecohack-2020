@@ -15,4 +15,15 @@ public class ResourceManagement : MonoBehaviour
     {
         resourcesText.text = "Resources: " + resourcesAvaliableInt;
     }
+
+    public void onSavePressed()
+    {
+        resourcesAvaliableInt = resourcesAvaliableInt - 100;
+        //set event clicked on = false
+    }
+
+    public void onDoNotSavePressed()
+    {
+        //set event clicked on = false
+    }
 }
