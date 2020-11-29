@@ -5,8 +5,9 @@ using UnityEngine.UI;
 using TMPro;
 public class OptionDescription : MonoBehaviour
 {
-    public AudioSource goodClip;
-    public AudioSource badClip;
+    public AudioClip goodClip;
+    public AudioClip badClip;
+    AudioSource audioSource;
     public string description;
 
     public List<GameObject> options;
@@ -19,6 +20,10 @@ public class OptionDescription : MonoBehaviour
     public bool secondSelection = false;
     bool good = false;
 
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnMouseDown()
     {
@@ -42,7 +47,8 @@ public class OptionDescription : MonoBehaviour
             //Good Script
             ScoreManager.goodCount++;
             Debug.Log("Good " + ScoreManager.goodCount);
-            goodClip.Play();
+            audioSource.clip = goodClip;
+            audioSource.Play();
         }
         else
         {
@@ -50,7 +56,8 @@ public class OptionDescription : MonoBehaviour
             Debug.Log("option1elsestatement");
             ScoreManager.badCount++;
             Debug.Log("bad " + ScoreManager.badCount);
-            badClip.Play();
+            audioSource.clip = badClip;
+            audioSource.Play();
         }
         //Debug.Log("1");
         option.SetActive(false);
@@ -65,14 +72,16 @@ public class OptionDescription : MonoBehaviour
             Debug.Log("Good Choice");
             Debug.Log("Good " + ScoreManager.goodCount);
             //Good Script
-            goodClip.Play();
+            audioSource.clip = goodClip;
+            audioSource.Play();
         }
         else
         {
             option3.SetActive(true);
             Debug.Log("Bad Choice");
             Debug.Log("bad " + ScoreManager.badCount);
-            badClip.Play();
+            audioSource.clip = badClip;
+            audioSource.Play();
         }
         //Debug.Log("2");
         option.SetActive(false); 
