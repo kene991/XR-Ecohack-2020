@@ -2304,6 +2304,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 3496778227446358821}
+    - target: {fileID: 6790436661873459187, guid: 633d93b2b9f70f24cb615c26e7977be4,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790436661873459187, guid: 633d93b2b9f70f24cb615c26e7977be4,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790436661873459187, guid: 633d93b2b9f70f24cb615c26e7977be4,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1570
+      objectReference: {fileID: 0}
     - target: {fileID: 6790436661873459196, guid: 633d93b2b9f70f24cb615c26e7977be4,
         type: 3}
       propertyPath: m_Name
