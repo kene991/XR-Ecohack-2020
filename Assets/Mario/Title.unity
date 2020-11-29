@@ -1217,9 +1217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1912338506}
   - component: {fileID: 1912338507}
-  - component: {fileID: 1912338509}
-  - component: {fileID: 1912338508}
-  - component: {fileID: 1912338510}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -1255,49 +1252,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 357377443}
---- !u!114 &1912338508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912338505}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1912338509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912338505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ReferenceLibrary: {fileID: 11400000, guid: 3ed033d6b90966049999b743904a11d0, type: 2}
-  m_MaxNumberOfMovingImages: 1
-  m_TrackedImagePrefab: {fileID: 0}
---- !u!114 &1912338510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912338505}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607c4c8f123c26440adc00b186eb95e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabsToInstantiate:
-  - name: qr-codelowres
-    prefab: {fileID: 4773453094247396352, guid: b6c96db6f16e0aa4c901c456ba924703,
-      type: 3}
-  - name: qr-code
-    prefab: {fileID: 4773453094247396352, guid: b6c96db6f16e0aa4c901c456ba924703,
-      type: 3}
